@@ -1,0 +1,11 @@
+
+public class Main { 
+
+		public static void main(String[] args) {
+			
+			Birou birou=new Birou (200, 200, 120, 200, 200, 40);
+			
+		birou.Tipareste();
+			
+		}
+}
