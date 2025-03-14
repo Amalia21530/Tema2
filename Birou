@@ -1,0 +1,24 @@
+public class Birou {
+
+	private Sertar SertarI, SertarII;
+	
+	private int latime, lungime, inaltime;
+	
+	public Birou (int latime, int lungime, int inaltime,int latimeSertar, int lungimeSertar, int inaltimeSertar ) {
+		
+		this.latime = latime;
+		this.lungime = lungime;
+		this.inaltime = inaltime;
+		this.SertarI = new Sertar (latimeSertar, lungimeSertar, inaltimeSertar);
+		this.SertarII = new Sertar (latimeSertar, lungimeSertar, inaltimeSertar);
+	}
+	
+	public void Tipareste() {
+		
+		System.out.println( "Birou " + latime  + lungime + inaltime );
+		
+	SertarI.Tipareste();
+	SertarII.Tipareste();
+
+	}
+}
