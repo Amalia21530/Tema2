@@ -1,0 +1,14 @@
+public class Main1 {
+	
+    public static void main(String[] args) {
+       
+        Carte carte1 = new Carte(248);  
+        Carte carte2 = new Carte(248);
+        
+        if (carte1.suntIdentice(carte2)) {
+            System.out.println("Carte1 și Carte2 sunt identice.");
+        } else {
+            System.out.println("Carte1 și Carte2 NU sunt identice.");
+        }
+    }
+}
