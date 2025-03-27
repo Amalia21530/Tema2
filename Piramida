@@ -1,0 +1,27 @@
+public class Piramida1 {
+	
+	private int n;
+	
+
+		public Piramida1(int n) {
+		super();
+		this.n = n;
+	}
+
+		public String toString() {
+			String piramidaStr = new String();
+			int index = 1;
+			for(int i = 1;i <= n; i++) {
+				for (int sp=0; sp < (n - index); sp++);
+					piramidaStr += i + " ";
+				piramidaStr += "\n";
+				index ++;
+			}
+		return piramidaStr;
+	}
+	
+			public static void main(String[] args) {
+				Piramida1 p1=new Piramida1(4);
+				System.out.println(p1);
+			}
+		}
